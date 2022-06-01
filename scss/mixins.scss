@@ -1,0 +1,27 @@
+// выравнивание элемента по центру абсолютным позиционированием
+@mixin centrabs() {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin centrgorabs() {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+
+// выравнивание элемента по центру относительным позиционированием
+@mixin centrrel() {
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin centrgorrel() {
+	position: relative;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
